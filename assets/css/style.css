@@ -11,7 +11,7 @@ h1 {
 	display: block;
 	width: 100%;
 }
-.gametext {
+.gameText {
 	margin-left: 30%;
 	margin-right: 30%;
 	text-align: center;
@@ -26,11 +26,17 @@ img {
 .donkey {
 	float:left;
 }
-.guessed {
+#answer {
 	letter-spacing: 12px;
 	font-size:400%;
 }
-p.guessed {
+#letter {
 	font-size:180%;
 	letter-spacing:10px;
+}
+#wins {
+	font-style:inherit;
+}
+#counter {
+	font-style:inherit;
 }
