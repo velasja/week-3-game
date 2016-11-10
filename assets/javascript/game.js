@@ -2,8 +2,8 @@
 var words = ["ballot", "swing state", "Democrat", "Republican", "Libertarian", "Green Party", "electoral college", "polling site"];
 var s;
 var guessCount = 10;
-var answerArray = [];
-var wins;
+var userGuess = [];
+var wins=0;
 var currentWord;
 var word = "abcd123456";
 var wordLength = word.length;
@@ -25,15 +25,15 @@ var randomWord = words[Math.floor(Math.random() * words.length)];
 
 
 function winCount() {
-	document.getElementById("wins").innerHTML = "Wins: " + wins;
+	document.getElementById("wins").innerHTML = wins;
 }
 
-function guessCount() {
-	document.getElementById("counter").innerHTML = "Guesses left: " + guessCount;
-		for (var i = 10; i > 0; i--) {
-			guessCount[i];
-		}
-}
+// function guessCount() {
+// 	document.getElementById("counter").innerHTML = "Guesses left: " + guessCount;
+// 		for (var i = 10; i > 0; i--) {
+// 			guessCount[i];
+// 		}
+// }
 
 // function getWord() {
 // 	for (var i = 0; i < randomWord.length; i++) {
@@ -47,7 +47,13 @@ function guessCount() {
 
 document.onkeyup = function(event) {
 	var letter = String.fromCharCode(event.keyCode).toLowerCase();
-	document.getElementById("letter").innerHTML = letter
+	document.getElementById("letter").innerHTML = letter;
+	if userGuess != arr.includes(searchElement === randomWord); {
+		for (var i = 10; i > 0; i--); {
+			document.getElementById("guessCount").innerHTML = guessCount-1;
+
+		}
+	}
 }
 
 // function startUp() {
